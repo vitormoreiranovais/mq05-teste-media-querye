@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querye</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="/estilo/media-queries.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="icone-menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="opcoes">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas quod temporibus incidunt provident culpa voluptatibus nihil consequatur iusto architecto quibusdam, debitis, nobis explicabo eligendi molestias, ipsa voluptatum quidem eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis, animi provident aut possimus nostrum, ex fugit labore facere accusamus omnis illo culpa reprehenderit ratione asperiores earum. Quis, doloremque facilis?
+            Aperiam consequuntur, eos placeat cum sequi veritatis magni tenetur dignissimos, numquam voluptatibus animi ad fugiat nam minus deleniti aliquam dolorum aut, molestias voluptatum iste enim! Quod sunt ratione incidunt beatae.
+            Atque natus consequatur provident sint ipsa rerum nulla? Maxime recusandae minus numquam repellat sint pariatur similique? Assumenda non accusantium fuga magni corrupti totam, quod sit, vel iure in, repudiandae at.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas quod temporibus incidunt provident culpa voluptatibus nihil consequatur iusto architecto quibusdam, debitis, nobis explicabo eligendi molestias, ipsa voluptatum quidem eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis, animi provident aut possimus nostrum, ex fugit labore facere accusamus omnis illo culpa reprehenderit ratione asperiores earum. Quis, doloremque facilis?
+            Aperiam consequuntur, eos placeat cum sequi veritatis magni tenetur dignissimos, numquam voluptatibus animi ad fugiat nam minus deleniti aliquam dolorum aut, molestias voluptatum iste enim! Quod sunt ratione incidunt beatae.
+            Atque natus consequatur provident sint ipsa rerum nulla? Maxime recusandae minus numquam repellat sint pariatur similique? Assumenda non accusantium fuga magni corrupti totam, quod sit, vel iure in, repudiandae at.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas quod temporibus incidunt provident culpa voluptatibus nihil consequatur iusto architecto quibusdam, debitis, nobis explicabo eligendi molestias, ipsa voluptatum quidem eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis, animi provident aut possimus nostrum, ex fugit labore facere accusamus omnis illo culpa reprehenderit ratione asperiores earum. Quis, doloremque facilis?
+            Aperiam consequuntur, eos placeat cum sequi veritatis magni tenetur dignissimos, numquam voluptatibus animi ad fugiat nam minus deleniti aliquam dolorum aut, molestias voluptatum iste enim! Quod sunt ratione incidunt beatae.
+            Atque natus consequatur provident sint ipsa rerum nulla? Maxime recusandae minus numquam repellat sint pariatur similique? Assumenda non accusantium fuga magni corrupti totam, quod sit, vel iure in, repudiandae at.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+            opcoes.style.display = 'block'
+        } else {
+            opcoes.style.display = 'none'
+        }
+    }
+
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+            opcoes.style.display = 'none'
+        } else {
+            opcoes.style.display ='block'
+        }
+    }
+    </script>
+</body>
+</html>
